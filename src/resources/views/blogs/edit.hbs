@@ -1,0 +1,18 @@
+<div class="mt-4">
+    <h1>Đăng blogs</h1>
+     <form method="POST" action="/blogs/{{blog._id}}?_method=PUT">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" value="{{blog.name}}" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" cols="30" rows="10">{{blog.description}}>
+        </div>
+        <div class="form-group">
+            <label for="description">Link Img</label>
+            <input type="text" class="form-control" name="img" value="{{blog.img}}"> 
+        </div>
+        <button type="submit" class="btn btn-primary">Save Blogs</button>
+</form>
+</div>
