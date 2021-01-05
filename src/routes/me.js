@@ -3,6 +3,6 @@ const router = express.Router();
 
 const meController = require("../app/controllers/MeControllers"); //controller
 
-router.get("/stored/blog", meController.storeBlog);
+router.get("/stored/blogs", meController.storeBlogs);
 
 module.exports = router;

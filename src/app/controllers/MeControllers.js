@@ -4,9 +4,13 @@ const {
     multipleMongoosetoObject,
 } = require("../../util/mongoose");
 
-class MeControllers {
+class MeController {
     //[GET], /me/stored/blog
-    storedBlog(req, res, next) {
+    // storeBlogs(req, res) {
+    //     res.render("search");
+    // }
+
+    storeBlogs(req, res, next) {
         Blog.find({})
             .then((blog) => {
                 res.render("me/stored-blog", {
@@ -17,4 +21,4 @@ class MeControllers {
     }
 }
 
-module.exports = new MeControllers();
+module.exports = new MeController();
